@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Vishakh & Sthvir Adventures</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body { min-height: 100vh; display: flex; flex-direction: column; }
+        .gallery-main { flex-grow: 1; }
+        /* Add a custom style for the simpler secondary navigation */
+        .secondary-nav-links {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .secondary-nav-links li a {
+            text-decoration: none;
+            color: var(--accent-color); /* Highlight the Home/Back link */
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .secondary-nav-links li a:hover {
+            color: var(--primary-text);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="gallery-header-small">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="heart-icon">🧡</span>
+                bestie.
+            </div>
+            
+            <ul class="secondary-nav-links">
+                <li><a href="index.html">🏠 Home</a></li> 
+                
+            </ul>
+        </nav>
+
+        <div class="gallery-hero-content">
+            <h1>The Full Visual Chronicle</h1>
+            <!-- <p>Every photo tells a story. Dive into the complete album of shared memories.</p> -->
+            </div>
+    </header>
+
+    <main class="gallery-main" id="gallery-page">
+        
+        <div class="photo-grid large-grid">
+            <div class="grid-item large-item"><img src="2.png" alt="Hiking Trip"><div class="caption">Hills & Thrills: Rishikesh, 2022</div></div>
+            <div class="grid-item"><img src="2nd.jpg" alt="Night out"><div class="caption">City Lights & Late Nights</div></div>
+            <div class="grid-item small-item"><img src="vishakh.jpg" alt="Graduation Day"><div class="caption">The Big Day 🎓</div></div>
+            
+            <div class="grid-item"><img src="sthvir.jpg" alt="New Memory 1"><div class="caption">That one time we tried cooking!</div></div>
+            <div class="grid-item large-item"><img src="4.png" alt="New Memory 2"><div class="caption">Diwali Celebrations, 2023</div></div>
+            <div class="grid-item"><img src="bestfriend.png" alt="New Memory 3"><div class="caption">Coffee & Planning World Domination</div></div>
+            
+            <div class="grid-item small-item"><img src="2nd1.jpg" alt="Food challenge"><div class="caption">Conquering the Food Challenge</div></div>
+           
+        </div>
+
+    </main>
+
+    <section class="info-section">
+        <p class="copyright">&copy; 2025 Vishakh & Sthvir. All Rights Reserved. Crafted with 🧡.</p>
+    </section>
+
+
+    <script>
+        
+    </script>
+
+</body>
+</html>

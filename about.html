@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vishakh & Sthvir</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* 1. THEME VARIABLES */
+        :root {
+            --primary-color: #ff6b6b; /* Your accent color */
+            --accent-color: #ff8c00;  /* Secondary accent */
+        }
+        
+        /* 2. BASE LAYOUT */
+        body { 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            background-color: #f7f7f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        
+        /* 3. SECONDARY HEADER (ONLY on this page) */
+        .secondary-header {
+            background-color: white;
+            padding: 15px 5%;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .secondary-nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        .secondary-nav a:hover {
+            color: #333;
+        }
+        
+        /* 4. MAIN CONTENT */
+        .about-main { 
+            flex-grow: 1; 
+            padding: 40px 5%; 
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .about-main h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        .about-main p.subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 50px;
+            font-size: 1.1em;
+        }
+
+        /* 5. PROFILE CARDS GRID (Responsive) */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .profile-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-image {
+            width: 100%;
+            height: 300px; 
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .profile-card h2 {
+            color: var(--primary-color);
+            font-size: 1.6em;
+            margin: 10px 0 5px 0;
+        }
+        
+        .profile-card h3 {
+             color: var(--accent-color);
+             font-size: 1.1em;
+             margin-top: 0;
+             margin-bottom: 20px;
+        }
+        
+        .profile-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        
+        .card-details {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* MOBILE VIEW: Stack the cards */
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* 6. SOCIAL LINKS SECTION (NEW) */
+        .social-links-section {
+            text-align: center;
+            padding: 50px 5%;
+            background-color: white;
+            border-top: 1px solid #eee;
+        }
+        .social-links-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+        .social-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Stacks links vertically (best for mobile list) */
+            gap: 15px;
+            max-width: 400px; /* Limits width for a neat look */
+            margin: 0 auto;
+        }
+        .social-list li {
+            width: 100%;
+        }
+        .social-list a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            border-radius: 50px; /* Pill shape */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .social-list a:hover {
+            transform: translateY(-2px);
+        }
+        .insta-link {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            color: white;
+        }
+        .youtube-link {
+            background-color: #FF0000;
+            color: white;
+        }
+        .snap-link {
+            background-color: #FFFC00;
+            color: #333;
+        }
+
+        /* MOBILE VIEW: Stack the cards */
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="secondary-header">
+        <nav class="secondary-nav">
+            <a href="index.html">← Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <h1>Meet the Dynamic Duo 🤝</h1>
+        <p class="subtitle">The story of Vishakh Bharti, the Visionary, and Sthvir Yadav, the Anchor.</p>
+
+        <div class="profile-grid">
+
+            <div class="profile-card">
+                <img src="vishakh.jpg" alt="Photo of Vishakh Bharti" class="profile-image">
+                <h2>Vishakh Bharti</h2>
+                <h3>The Visionary ✨</h3>
+                <p>
+                    Vishakh is the architect of adventures, always pushing boundaries and bringing infectious energy to every plan. His enthusiasm drives most of the duo's adventures and ensures life is never dull.
+                </p>
+                <p class="card-details">
+                    Role: The spark, the planner, the bringer of fun.
+                </p>
+            </div>
+
+            <div class="profile-card">
+                <img src="4.png" alt="Photo of Sthvir Yadav" class="profile-image">
+                <h2>Sthvir Yadav</h2>
+                <h3>The Anchor 🛡️</h3>
+                <p>
+                    Sthvir is the calm and collected anchor of the friendship. He's the one who remembers every shared memory and provides the essential reality check. His reliability and steady support are the foundations upon which their friendship thrives.
+                </p>
+                 <p class="card-details">
+                    Role: The stability, the memory bank, the voice of logic.
+                </p>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <section class="social-links-section">
+        <h2>Connect with Us!</h2>
+        <ul class="social-list">
+            <li><a href="#" class="insta-link" style="text-decoration: line-through; color: black;">📸 Follow on Instagram</a></li>
+            <li><a href="#" class="youtube-link" style="text-decoration: line-through; color: black;">▶️ Subscribe on YouTube</a></li>
+            <li><a href="#" class="snap-link" style="text-decoration: line-through; color: black;">👻 Add us on Snapchat</a></li>
+            <li><a href="message.html" class="insta-link" style="background-color: var(--primary-color);">💌 Send a Private Message</a></li>
+        </ul>
+    </section>
+    <section class="info-section">
+        <!-- <p class="copyright">&copy; 2025 Vishakh & Sthvir. All Rights Reserved. Crafted with 🧡.</p> -->
+    </section>
+
+</body>
+</html>
